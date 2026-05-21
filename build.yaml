@@ -20,6 +20,5 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: clog_left
-  - board: nice_nano_v2
-    shield: clog_right
+    shield: macropad
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
