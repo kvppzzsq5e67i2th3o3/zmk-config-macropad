@@ -15,6 +15,10 @@
         };
     };
 
+    aliases {
+        indicator-led = &user_led;
+    };
+    
     chosen {
         zmk,physical-layout = &physical_layout;
         zmk,backlight = &blue_led;
