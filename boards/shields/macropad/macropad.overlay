@@ -9,8 +9,16 @@
 / {
     chosen {
         zmk,physical-layout = &physical_layout;
+        zmk,backlight = &blue_led;
     };
-
+    
+    leds {
+        compatible = "gpio-leds";
+        blue_led: led_0 {
+            gpios = <&gpio0 15 GPIO_ACTIVE_HIGH>;
+        };
+    };
+    
     kscan: kscan {
         // If the hardware does not use a switch matrix, change this to the
         // appropriate driver and update the properties below to match.

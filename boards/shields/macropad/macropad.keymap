@@ -6,6 +6,20 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+    // toggles led when switching to lower_layer
+    macros {
+        tog_led: tog_led {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&tog 1>
+                , <&bl BL_TOG>
+                ;
+        };
+    };
+
     // Define a default keymap here.
     // See https://zmk.dev/docs/development/hardware-integration/new-shield#default-keymap.
     keymap {
@@ -32,7 +46,7 @@
                 &trans &kp N6 &kp N5 &kp N4 
                 &kp KP_ENTER &kp N3 &kp N2 &kp N1 
                 &trans &kp DOT &kp N0 &trans
-                &tog 1 &kp ESC // 21 and 22
+                &tog_led &kp ESC // 21 and 22
             >;
         };
         lower_layer { // layer 1
