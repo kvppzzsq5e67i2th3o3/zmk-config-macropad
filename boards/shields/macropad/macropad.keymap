@@ -31,7 +31,7 @@
                 &kp KP_PLUS &kp N9 &kp N8 &kp N7
                 &trans &kp N6 &kp N5 &kp N4 
                 &kp KP_ENTER &kp N3 &kp N2 &kp N1 
-                &trans &kp KP_DOT &kp N0 &trans
+                &trans &kp DOT &kp N0 &trans
                 &tog 1 &kp ESC // 21 and 22
             >;
         };
