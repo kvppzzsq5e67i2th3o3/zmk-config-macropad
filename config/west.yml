@@ -8,15 +8,15 @@ manifest:
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
 
       #poor mans led see https://github.com/BlueDrink9/zmk-poor-mans-led-indicator
-    - name: bluedrink9
-      url-base: https://github.com/bluedrink9
+    # - name: bluedrink9
+    #   url-base: https://github.com/bluedrink9
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
       #poor mans led
-    - name: zmk-poor-mans-led-indicator
-      remote: bluedrink9
-      revision: main
+    # - name: zmk-poor-mans-led-indicator
+    #   remote: bluedrink9
+    #   revision: main
   self:
     path: config
