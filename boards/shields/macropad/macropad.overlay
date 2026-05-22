@@ -58,9 +58,10 @@
         >;
     };
 
-    physical_layout0: physical_layout_0 {
+    physical_layout: physical_layout {
     compatible = "zmk,physical-layout";
     display-name = "Default Layout";
+    kscan = <&kscan>;
     transform = <&default_transform>;
 
     //                   w    h      x    y    rot    rx    ry
